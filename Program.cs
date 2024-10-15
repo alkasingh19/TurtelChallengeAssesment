@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         // Read settings from a file
-        string[] settings = File.ReadAllLines("..\\game-settings.txt");
+        string[] settings = File.ReadAllLines("..\\..\\..\\Input-Setting\\game-settings.txt");
 
         // Parse the board size from the settings file
         int boardSize = int.Parse(settings[0]);
@@ -32,7 +32,7 @@ class Program
         }
 
         // Read moves from file
-        string[] moves = File.ReadAllLines("..\\moves.txt");
+        string[] moves = File.ReadAllLines("..\\..\\..\\Input-Setting\\moves.txt");
 
         // Process each sequence of moves
         for (int i = 0; i < moves.Length; i++)
